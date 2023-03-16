@@ -1,0 +1,17 @@
+﻿Vaccine_Manufacturer,Population,Severe Disease,Infection,Severe Disease,Infection,Severe Disease,Infection,Severe Disease,Infection,Severe Disease,Infection,Severe Disease,Infection
+,,Ancestral,Ancestral,Alpha,Alpha,Beta,Beta,Gamma,Gamma,Delta,Delta,Omicron,Omicron
+CanSino,100,66,62,66,62,64,61,64,61,64,61,48,32
+Covaxin,100,78,73,78,73,76,72,76,72,76,72,57,38
+Johnson&Johnson,100,86,72,86,72,76,64,76,64,76,64,57,33
+Medicago,100,89,75,89,75,89,75,89,75,89,75,65,43
+Moderna,100,97,92,97,92,97,91,97,91,97,91,73,48
+Novavax,100,89,83,89,83,86,82,86,82,86,82,65,43
+Oxford/AstraZeneca,100,94,63,94,63,94,69,94,69,94,69,71,36
+Pfizer/BioNTech,100,95,86,95,86,95,84,95,84,95,84,72,44
+Sinopharm/Beijing,100,73,68,73,68,71,67,71,67,71,67,53,35
+Sinovac/Coronavac,100,50,47,50,47,49,46,49,46,49,46,37,24
+SKYCovione,100,75,70,75,70,73,69,73,69,73,69,55,36
+Sputnik V,100,92,86,92,86,89,85,89,85,89,85,67,44
+Valneva,100,75,70,75,70,73,69,73,69,73,69,55,36
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
