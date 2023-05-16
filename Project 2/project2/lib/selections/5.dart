@@ -23,6 +23,75 @@ class _WeaknessState extends State<Weakness> {
     convertCSVToJson();
   }
 
+  Future<void> _showAddNewLineDialog() async {
+    Map<String, String> newData = {
+      'PARAM NAME': '',
+      'EST. VALUE IN CURRENCY': '',
+      'MIN PROB %': '',
+      'REALISTIC PROB %': '',
+      'MAX PROB %': '',
+    };
+
+    await showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Add New Line'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextFormField(
+                decoration: InputDecoration(labelText: 'PARAM NAME'),
+                onChanged: (value) {
+                  newData['PARAM NAME'] = value;
+                },
+              ),
+              TextFormField(
+                decoration:
+                    InputDecoration(labelText: 'EST. VALUE IN CURRENCY'),
+                onChanged: (value) {
+                  newData['EST. VALUE IN CURRENCY'] = value;
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'MIN PROB %'),
+                onChanged: (value) {
+                  newData['MIN PROB %'] = value;
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'REALISTIC PROB %'),
+                onChanged: (value) {
+                  newData['REALISTIC PROB %'] = value;
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'MAX PROB %'),
+                onChanged: (value) {
+                  newData['MAX PROB %'] = value;
+                },
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('Add'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   Future<void> convertCSVToJson() async {
     String csvData =
         await rootBundle.loadString('data/Weakness Analysis Data.csv');
@@ -50,6 +119,17 @@ class _WeaknessState extends State<Weakness> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Weakness Chart'),
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(right: 16.0),
+            child: FloatingActionButton(
+              onPressed: () {
+                _showAddNewLineDialog();
+              },
+              child: Icon(Icons.add),
+            ),
+          ),
+        ],
       ),
       body: Center(
         child: _data == null
