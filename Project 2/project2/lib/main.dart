@@ -136,7 +136,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Color.fromARGB(255, 238, 214, 238),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Text("Weakness Analysis Data"),
+                child: Center(
+                  child: Text("Weakness Analysis Data"),
+                ),
               ),
             ),
           ],
@@ -145,73 +147,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-
-// Scaffold(
-//       body: SafeArea(
-//         child: Center(
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.end,
-//             children: [
-//               Expanded(child: Container(color: Colors.green)),
-//               Text(
-//                 "Dollar amount",
-//               ),
-//               Container(
-//                 width: 400,
-//                 height: 20,
-//                 child: TextField(
-//                   keyboardType: TextInputType.number,
-//                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-//                 ),
-//               ),
-//               Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 crossAxisAlignment: CrossAxisAlignment.center,
-//                 children: [
-//                   Container(
-//                     width: 50,
-//                     height: 80,
-//                     child: TextField(
-//                       keyboardType: TextInputType.number,
-//                       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-//                     ),
-//                   ),
-//                   Text(
-//                     "% realistic",
-//                   ),
-//                   Container(
-//                     width: 50,
-//                     height: 80,
-//                     child: TextField(
-//                       keyboardType: TextInputType.number,
-//                       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-//                     ),
-//                   ),
-//                   Text(
-//                     "% optimistic",
-//                   ),
-//                   Container(
-//                     width: 50,
-//                     height: 80,
-//                     child: TextField(
-//                       keyboardType: TextInputType.number,
-//                       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-//                     ),
-//                   ),
-//                   Text(
-//                     "% preference",
-//                   ),
-//                 ],
-//               ),
-//               Container(
-//                 width: 100,
-//                 height: 40,
-//                 color: Colors.green,
-//                 child: Icon(Icons.check),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
