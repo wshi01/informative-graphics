@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:project2/selections/1.dart';
 import 'package:project2/selections/2.dart';
 import 'package:project2/selections/3.dart';
 import 'package:project2/selections/4.dart';
