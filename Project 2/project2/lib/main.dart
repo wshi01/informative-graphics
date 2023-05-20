@@ -21,7 +21,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -95,10 +94,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               text: "S",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize:
-                                    40, // Adjust the font size as per your preference
-                                fontWeight: FontWeight
-                                    .bold, // Optional: Add fontWeight if desired
+                                fontSize: 40,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             TextSpan(
@@ -156,10 +153,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               text: "W",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize:
-                                    40, // Adjust the font size as per your preference
-                                fontWeight: FontWeight
-                                    .bold, // Optional: Add fontWeight if desired
+                                fontSize: 40,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             TextSpan(
@@ -222,10 +217,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               text: "O",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize:
-                                    40, // Adjust the font size as per your preference
-                                fontWeight: FontWeight
-                                    .bold, // Optional: Add fontWeight if desired
+                                fontSize: 40,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             TextSpan(
@@ -283,10 +276,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               text: "T",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize:
-                                    40, // Adjust the font size as per your preference
-                                fontWeight: FontWeight
-                                    .bold, // Optional: Add fontWeight if desired
+                                fontSize: 40,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             TextSpan(

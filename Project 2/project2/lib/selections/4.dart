@@ -86,8 +86,6 @@ class _ThreatState extends State<Threat> {
 
     File file = File(csvFilePath);
     await file.writeAsString(csvData, mode: FileMode.append);
-    print('CSV file written successfully!');
-    // await updateCSVToJson();
   }
 
   @override
@@ -205,11 +203,10 @@ class _ThreatState extends State<Threat> {
                       height: 100,
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 255, 255, 204),
-                        borderRadius: BorderRadius.circular(
-                            10), // Adjust the radius as needed
+                        borderRadius: BorderRadius.circular(10),
                         border: Border.all(
                           color: Colors.black,
-                          width: 1, // Adjust the border width as needed
+                          width: 1,
                         ),
                       ),
                       child: Align(

@@ -103,7 +103,7 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-                    name: '3 point based', // Name of the series
+                    name: '3 point based',
                   ),
                   BarSeries<Map<String, dynamic>, String>(
                     dataSource: _data!,
@@ -117,7 +117,7 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-                    name: 'MIN PROB ADJUSTED VALUE', // Name of the series
+                    name: 'MIN PROB ADJUSTED VALUE',
                   ),
                   BarSeries<Map<String, dynamic>, String>(
                     dataSource: _data!,
@@ -131,7 +131,7 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-                    name: 'MAX PROB ADJUSTED VALUE', // Name of the series
+                    name: 'MAX PROB ADJUSTED VALUE',
                   ),
                   BarSeries<Map<String, dynamic>, String>(
                     dataSource: _data!,
@@ -145,8 +145,7 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-
-                    name: 'AVERAGE PROB ADJUSTED VALUE', // Name of the series
+                    name: 'AVERAGE PROB ADJUSTED VALUE',
                   ),
                   BarSeries<Map<String, dynamic>, String>(
                     dataSource: _data!,
@@ -160,7 +159,7 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-                    name: 'REALISTIC PROB ADJUSTED VALUE', // Name of the series
+                    name: 'REALISTIC PROB ADJUSTED VALUE',
                   ),
                   BarSeries<Map<String, dynamic>, String>(
                     dataSource: _data!,
@@ -175,8 +174,7 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-                    name:
-                        '3 POINT BASED PROB ADJUSTED VALUE', // Name of the series
+                    name: '3 POINT BASED PROB ADJUSTED VALUE',
                   ),
                   BarSeries<Map<String, dynamic>, String>(
                     dataSource: _data!,
@@ -190,10 +188,8 @@ class _ChartScreen4State extends State<ChartScreen4> {
                         return 0.0;
                       }
                     },
-                    name:
-                        'PERT BASED PROB ADJUSTED VALUE', // Name of the series
+                    name: 'PERT BASED PROB ADJUSTED VALUE',
                   ),
-                  // Add other BarSeries here
                 ],
               ),
       ),
