@@ -5,14 +5,14 @@ import 'package:path_provider/path_provider.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:csv/csv.dart';
 
-class ChartScreen extends StatefulWidget {
-  const ChartScreen({Key? key}) : super(key: key);
+class ChartScreen2 extends StatefulWidget {
+  const ChartScreen2({Key? key}) : super(key: key);
 
   @override
-  _ChartScreenState createState() => _ChartScreenState();
+  _ChartScreen2State createState() => _ChartScreen2State();
 }
 
-class _ChartScreenState extends State<ChartScreen> {
+class _ChartScreen2State extends State<ChartScreen2> {
   List<Map<String, dynamic>>? _data;
 
   @override
@@ -29,7 +29,7 @@ class _ChartScreenState extends State<ChartScreen> {
 
   Future<void> loadCSVFromDirectory() async {
     Directory? directoryPath = await getExternalStorageDirectory();
-    String csvFilePath = '${directoryPath?.path}/Weakness Analysis Data.csv';
+    String csvFilePath = '${directoryPath?.path}/Strength Analysis Data.csv';
     File file = File(csvFilePath);
     if (!file.existsSync()) {
       print('CSV file does not exist!');
@@ -66,14 +66,14 @@ class _ChartScreenState extends State<ChartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Weakness Chart'),
+        title: const Text('Strength Chart'),
       ),
       body: Center(
         child: _data == null
             ? const CircularProgressIndicator()
             : SfCartesianChart(
                 primaryXAxis: CategoryAxis(),
-                title: ChartTitle(text: 'Weakness Chart'),
+                title: ChartTitle(text: 'Strength Chart'),
                 legend:
                     Legend(isVisible: true, shouldAlwaysShowScrollbar: true),
                 series: <ChartSeries>[

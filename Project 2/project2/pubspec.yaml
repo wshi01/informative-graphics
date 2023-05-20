@@ -28,5 +28,8 @@ dev_dependencies:
 flutter:
   assets: 
     - data/Weakness Analysis Data.csv
+    - data/Strength Analysis Data.csv
+    - data/Opportunity Analysis Data.csv
+    - data/Threat Analysis Data.csv
   uses-material-design: true
 
